@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 
 import styles from './styles';
 
@@ -8,6 +8,10 @@ export default class Home extends React.Component {
     return (
       <View style={ styles.container }>
         <Text>Home Screen</Text>
+        <Button
+          title='Go to List'
+          onPress={() => this.props.navigation.navigate('List')}
+        />
       </View>
     );
   }
