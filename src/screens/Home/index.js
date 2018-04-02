@@ -10,7 +10,13 @@ export default class Home extends React.Component {
         <Text>Home Screen</Text>
         <Button
           title='Go to List'
-          onPress={() => this.props.navigation.navigate('List')}
+          onPress={() => this.props.navigation.navigate(
+            'List',
+            {
+              name: 'Groceries',
+              items: []
+            }
+          )}
         />
       </View>
     );

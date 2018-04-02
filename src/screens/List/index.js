@@ -5,9 +5,12 @@ import styles from './styles';
 
 export default class List extends React.Component {
   render() {
+    const { params } = this.props.navigation.state;
+    const name = params ? params.name : 'New List';
+    const items = params ? params.items : [];
     return (
       <View style={ styles.listContainer }>
-        <Text>List Screen</Text>
+        <Text>{ name }</Text>
       </View>
     );
   }
