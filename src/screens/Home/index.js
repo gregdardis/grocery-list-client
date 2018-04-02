@@ -6,7 +6,7 @@ import styles from './styles';
 export default class Home extends React.Component {
   render() {
     return (
-      <View style={ styles.container }>
+      <View style={ styles.homeContainer }>
         <Text>Home Screen</Text>
         <Button
           title='Go to List'
